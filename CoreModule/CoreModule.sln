@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularInjection", "DiModule\ModularInjection.csproj", "{71B2CA0D-5242-4CCF-A128-7ED833FC7E87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task", "Task", "{D033A101-1B00-4552-B5BB-E83905919A42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiModule.Task", "DiModule.Task\DiModule.Task.csproj", "{EC1A722B-0F16-4AE3-AF47-EF0046BB02A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71B2CA0D-5242-4CCF-A128-7ED833FC7E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B2CA0D-5242-4CCF-A128-7ED833FC7E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B2CA0D-5242-4CCF-A128-7ED833FC7E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B2CA0D-5242-4CCF-A128-7ED833FC7E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1A722B-0F16-4AE3-AF47-EF0046BB02A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1A722B-0F16-4AE3-AF47-EF0046BB02A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1A722B-0F16-4AE3-AF47-EF0046BB02A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1A722B-0F16-4AE3-AF47-EF0046BB02A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC1A722B-0F16-4AE3-AF47-EF0046BB02A6} = {D033A101-1B00-4552-B5BB-E83905919A42}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83042EC3-2006-498A-9759-DA1FF320CCD8}
+	EndGlobalSection
+EndGlobal
