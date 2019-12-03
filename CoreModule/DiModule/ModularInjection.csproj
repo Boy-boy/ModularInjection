@@ -1,7 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>.net core 3.0使用autofac实现模块化注入帮助类</Description>
+    <Authors>gaobo</Authors>
+    <Company>gaobo</Company>
+    <PackageId>Autofac.ModularInjection.DependencyInjection</PackageId>
+    <Product>Autofac.ModularInjection.DependencyInjection</Product>
+    <PackageProjectUrl>https://github.com/Boy-boy/ModularInjection</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
