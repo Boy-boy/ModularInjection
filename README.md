@@ -27,7 +27,14 @@
     }
    
    ```
-  2. 添加初始化模块类
+  2.在Startup类中添加如下代码片段
+  ```
+    public void ConfigureContainer(ContainerBuilder builder)
+        {
+           //自定义注入
+        }
+  ```
+  3. 添加初始化模块类
  
     [DependsOn(typeof(模块化类))]
     public class StartupDiModule: ModularInjection.DiModule
