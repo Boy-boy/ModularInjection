@@ -9,13 +9,21 @@
 
 ## 代码演示
 1.  
-   public static IHostBuilder CreateHostBuilder(string[] args) =>
+   public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory<StartupDiModule>())
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+    }
   
   2. 
     [DependsOn(typeof(模块化类))]
