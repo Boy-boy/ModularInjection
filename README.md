@@ -8,7 +8,8 @@
 请在初始化模块类添加此特性  [DependsOn(typeof(模块化类))]
 
 ## 代码演示
-1.  
+1.  在Program类中添加 .UseServiceProviderFactory(new AutofacServiceProviderFactory<初始化模块的类>())
+```
    public class Program
     {
         public static void Main(string[] args)
@@ -24,8 +25,10 @@
                     webBuilder.UseStartup<Startup>();
                 });
     }
+    ```
   
-  2. 
+  2. 添加初始化模块类
+  ```
     [DependsOn(typeof(模块化类))]
     public class StartupDiModule: ModularInjection.DiModule
     {
@@ -44,3 +47,4 @@
             //后初始化
         }
     }
+    ```
