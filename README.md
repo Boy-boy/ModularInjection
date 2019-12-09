@@ -2,12 +2,21 @@
 使用autofac实现模块化注入
 
 ## 使用方式
-1.创建.net core 3.0项目，  
+1.创建.net core2.2或 3.0项目，  
 2.在Program类中添加 ```.UseServiceProviderFactory(new AutofacServiceProviderFactory<初始化模块的类>()) ```     
 3.添加初始化模块类，此类需继承DiModule，如``` public class StartupDiModule: ModularInjection.DiModule```，若想实现跨类库注入,
 请在初始化模块类添加此特性 ``` [DependsOn(typeof(模块化类))]```
-
-## 代码演示
+## core2.2项目代码演示
+1.在Startup类中添加如下代码片段
+  ```
+    public IServiceProvider ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            return  services.AddModule<StartupDiModule>();
+        }
+  ```
+  
+## core3.0项目代码演示
 1.  在Program类中添加 .UseServiceProviderFactory(new AutofacServiceProviderFactory<初始化模块的类>())
 ```
    public class Program
@@ -34,7 +43,8 @@
            //自定义注入
         }
   ```
-  3. 添加初始化模块类
+  ## core2.2或3.0项目添加初始化模块类
+   添加初始化模块类
  
     [DependsOn(typeof(模块化类))]
     public class StartupDiModule: ModularInjection.DiModule
