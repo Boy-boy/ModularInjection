@@ -44,7 +44,7 @@
         }
   ```
   ## core2.2或3.0+项目添加初始化模块类
-   ### 添加初始化模块类
+   ##### 添加初始化模块类
  
     [DependsOn(typeof(模块化类))]
     public class StartupDiModule: ModularInjection.DiModule
