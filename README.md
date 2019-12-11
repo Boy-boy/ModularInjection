@@ -1,5 +1,7 @@
 # ModularInjection
 使用autofac实现模块化注入
+## Nuget
+1.package address https://www.nuget.org/packages/Autofac.ModularInjection.DependencyInjection/
 
 ## 使用方式
 1.创建.net core2.2或 3.0+项目，  
